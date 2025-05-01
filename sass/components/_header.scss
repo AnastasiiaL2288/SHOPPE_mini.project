@@ -1,0 +1,45 @@
+.header {
+    height: 122px;
+    padding: 96px 64px;
+  }
+  
+  .header__box {
+
+    max-width: 1248px;
+    height: 42px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header__logo {
+    height: 35px;
+  }
+  
+  .header__nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .header__nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 35px;
+  }
+  
+  .header__nav-item {
+    font-size: 16px;
+    color: $black;
+  }
+  
+  .header__nav-linia {
+    width: 2px;
+    height: 20px;
+    background-color: $grau;
+    margin: 0 48px;
+  }
+  

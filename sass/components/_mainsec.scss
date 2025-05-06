@@ -1,0 +1,40 @@
+.promo {
+    max-width: 1440px;
+    height: 800px;
+    padding: 0 96px;
+    margin: 0 auto;
+    border-radius: 16px;
+    background-image: url('../images/background.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.promo__box {
+    color: $white;
+}
+
+.promo__title {
+    font-size: 33px;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+
+.promo__price {
+    font-size: 26px;
+    margin-bottom: 24px;
+}
+
+.promo__button {
+    width: 202px;
+    height: 53px;
+    padding: 13px 31px;
+    font-size: 20;
+    border: 2px solid $white;
+    background: transparent;
+    color: $white;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-top: 48px;
+}

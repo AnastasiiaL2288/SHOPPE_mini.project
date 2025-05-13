@@ -2,7 +2,12 @@
     height: 122px;
     padding: 64px 96px 0;
   }
-  
+
+  .header__burger-icons {
+    display: none;
+    gap: 16px;
+  }
+
   .header__box {
     height: 42px;
     margin: 0 auto;
@@ -41,3 +46,23 @@
     margin: 0 48px;
   }
   
+
+
+  @media (max-width: 768px) {
+    .header__nav-list {
+      display: none; 
+    }
+  
+    .header__burger-icons {
+      display: flex;
+      align-items: center;
+    }
+  
+    .header {
+      padding: 20px 24px;
+    }
+  
+    .header__logo {
+      height: 24px; 
+    }
+  }

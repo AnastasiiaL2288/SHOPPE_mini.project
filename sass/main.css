@@ -1,3 +1,67 @@
+.products {
+  margin: 0 auto;
+  padding: 60px 96px;
+  color: #000000;
+}
+
+.products__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.products__title {
+  font-size: 33px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.products__text {
+  text-align: right;
+  font-size: 20px;
+  color: #A18A68;
+  margin-bottom: 42px;
+  cursor: pointer;
+}
+
+.products__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 24px;
+}
+
+.products__card {
+  width: 377px;
+  height: 472px;
+  text-align: left;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding-bottom: 16px;
+  transition: transform 0.3s ease;
+}
+
+.products__card:hover {
+  transform: translateY(-5px);
+}
+
+.products__card-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.products__card-title {
+  font-size: 20px;
+  margin: 8px 0 4px;
+  color: #000000;
+}
+
+.products__card-price {
+  font-size: 20px;
+  color: #A18A68;
+}
+
 .header {
   height: 122px;
   padding: 64px 96px 0;
@@ -30,7 +94,7 @@
 }
 
 .header__nav-item {
-  font-size: 27px;
+  font-size: 16px;
   color: #000000;
 }
 
@@ -41,11 +105,81 @@
   margin: 0 48px;
 }
 
+.footer {
+  background-color: #FFFFFF;
+  padding: 40px 96px;
+  margin-top: 250px;
+}
+
+.footer__linia {
+  margin-left: 96px;
+  width: 1248px;
+  height: 1px;
+  color: #000000;
+}
+
+.footer__box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 14px;
+  color: #707070;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 41px;
+  flex-wrap: wrap;
+}
+
+.footer__info-text {
+  margin: 0;
+}
+
+.footer__info-in {
+  font-size: 13px;
+  color: #707070;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 50px;
+  text-align: right;
+}
+
+.footer__links-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 4px;
+}
+
+.footer__links-text {
+  font-size: 14px;
+  color: #707070;
+  margin: 0;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 16px;
+}
+
 .promo {
-  max-width: 1440px;
-  height: 800px;
+  height: 646px;
   padding: 0 96px;
   margin: 0 auto;
+  margin-left: 96px;
+  margin-right: 96px;
   border-radius: 16px;
   background-image: url("../images/background.png");
   background-size: cover;
@@ -80,6 +214,7 @@
   font-weight: bold;
   border-radius: 6px;
   margin-top: 48px;
+  cursor: pointer;
 }
 
 body {

@@ -1,8 +1,9 @@
 .promo {
-    max-width: 1440px;
-    height: 800px;
+    height: 646px;
     padding: 0 96px;
     margin: 0 auto;
+    margin-left: 96px;
+    margin-right: 96px;
     border-radius: 16px;
     background-image: url('../images/background.png');
     background-size: cover;
@@ -37,4 +38,5 @@
     font-weight: bold;
     border-radius: 6px;
     margin-top: 48px;
+    cursor: pointer;
 }

@@ -57,9 +57,63 @@
     margin-right: 127px;
     font-size: 16px;
     color: $grau;
+    cursor: pointer;
   }
   
   .footer__socials {
     display: flex;
     gap: 30px;
+    cursor: pointer;
+  }
+
+  .footer__info-text {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .footer__info-text:hover {
+    color: $gold;
+    transform: translateY(-5px);
+  }
+
+
+
+  @media (max-width: 768px) {
+    .footer {
+      padding: 18px 18px;
+      margin-top: 80px;
+      
+      &__linia {
+        display: none;
+      }
+      
+      &__box {
+        flex-direction: column;
+        border-top: none;
+      }
+      
+      &__info {
+        order: 2;
+        gap: 18px;
+      }
+      
+      &__nav {
+        flex-direction: column;
+        gap: 16px;
+      }
+      
+      &__links {
+        order: 1;
+        align-items: flex-start;
+        gap: 18px;
+      }
+      
+      &__links-text {
+        margin-right: 0;
+      }
+      
+      &__socials {
+        gap: 18px;
+      }
+    }
   }

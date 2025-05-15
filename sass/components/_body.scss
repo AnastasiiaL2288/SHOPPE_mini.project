@@ -39,6 +39,7 @@
     border-radius: 12px;
     padding-bottom: 16px;
     transition: transform 0.3s ease;
+    cursor: pointer;
   }
   
   .products__card:hover {
@@ -60,4 +61,49 @@
   .products__card-price {
     font-size: 20px;
     color: $gold;
+  }
+
+
+
+
+  @media (max-width: 768px) {
+    .products {
+      padding: 40px 24px;
+      
+      &__head {
+        margin-bottom: 16px;
+      }
+      
+      &__title {
+        font-size: 24px;
+      }
+      
+      &__text {
+        font-size: 16px;
+        margin-bottom: 24px;
+      }
+      
+      &__box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      
+      &__card {
+        width: 100%;
+        height: auto;
+        padding-bottom: 12px;
+        
+        &-img {
+          margin-bottom: 8px;
+        }
+        
+        &-title {
+          font-size: 16px;
+        }
+        
+        &-price {
+          font-size: 16px;
+        }
+      }
+    }
   }
